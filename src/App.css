@@ -306,3 +306,46 @@ nav a:hover {
 .contact-form button:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  nav h2 {
+    margin: 0 0 15px 0;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+
+  .home h1 {
+    font-size: 42px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 300px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
