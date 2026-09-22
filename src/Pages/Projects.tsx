@@ -1,6 +1,6 @@
 import soccerImage from '../assets/soccerteammanager.png'
 import wifiImage from '../assets/wifispeedtest.png'
-import carRentalImage from '../assets/f1logo.png'
+import F1Image from '../assets/f1logo.png'
 
 function Projects() {
   return (
@@ -34,10 +34,10 @@ function Projects() {
         </div>
 
         <div className="project-card">
-          <img src={carRentalImage} alt="F1 Strategy Simulator" />
+          <img src={F1Image} alt="F1 Strategy Simulator" />
           <h2>F1 Strategy Simulator</h2>
           <p>
-            I currently working on developing a simulation tool for Formula 1 racing strategies, allowing users to test different approaches and analyze performance.
+            I am currently working on developing a simulation tool for Formula 1 racing strategies, allowing users to test different approaches and analyze performance.
           </p>
         </div>
 

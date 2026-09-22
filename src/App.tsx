@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
@@ -13,12 +13,12 @@ function App() {
       <nav>
         <h2>JB</h2>
 
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/education">Education</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact Me</Link>
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/about">About Me</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/education">Education</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/contact">Contact Me</NavLink>
       </nav>
 
       <Routes>
@@ -29,6 +29,11 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+<footer>
+  <p>© 2026 Jordan Brandes | Portfolio</p>
+</footer>
+
     </BrowserRouter>
   )
 }

@@ -17,9 +17,18 @@ nav {
 nav h2 {
   margin: 0;
   margin-right: auto;
-  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 20px;
   color: white;
+  letter-spacing: 1px;
 }
+
 
 nav a {
   color: white;
@@ -30,6 +39,11 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 
 .home {
@@ -348,4 +362,15 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f2937;
+  color: white;
+}
+
+footer p {
+  margin: 0;
 }
